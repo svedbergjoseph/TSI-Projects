@@ -22,20 +22,20 @@ print("=" * 60)
 def word_count(text):
     return len(word_tokenize(text))
 
-print(f"\n📄 Transcript 1 — Words: {word_count(text1)}, Sentences: {len(sent_tokenize(text1))}")
-print(f"📄 Transcript 2 — Words: {word_count(text2)}, Sentences: {len(sent_tokenize(text2))}")
+print(f"\nTranscript 1 — Words: {word_count(text1)}, Sentences: {len(sent_tokenize(text1))}")
+print(f"Transcript 2 — Words: {word_count(text2)}, Sentences: {len(sent_tokenize(text2))}")
 
 # ── 2. TF-IDF Cosine Similarity ──────────────────────────────────
 vectorizer = TfidfVectorizer(stop_words="english")
 tfidf_matrix = vectorizer.fit_transform([text1, text2])
 tfidf_score = cosine_similarity(tfidf_matrix[0:1], tfidf_matrix[1:2])[0][0]
-print(f"\n🔢 TF-IDF Cosine Similarity:      {tfidf_score:.4f}  (0=different, 1=identical)")
+print(f"\nTF-IDF Cosine Similarity:      {tfidf_score:.4f}  (0=different, 1=identical)")
 
 # ── 3. Semantic Similarity (Sentence Transformers) ───────────────
 model = SentenceTransformer("all-MiniLM-L6-v2")
 embeddings = model.encode([text1, text2])
 semantic_score = cosine_similarity([embeddings[0]], [embeddings[1]])[0][0]
-print(f"🧠 Semantic Similarity Score:      {semantic_score:.4f}  (meaning-based)")
+print(f"Semantic Similarity Score:      {semantic_score:.4f}  (meaning-based)")
 
 # ── 4. Keyword Overlap ───────────────────────────────────────────
 stop_words = set(stopwords.words("english"))
@@ -49,8 +49,8 @@ kw2 = get_keywords(text2)
 shared = kw1 & kw2
 overlap = len(shared) / len(kw1 | kw2)
 
-print(f"\n🔑 Shared Keywords ({len(shared)}): {', '.join(sorted(shared))}")
-print(f"📊 Keyword Overlap (Jaccard):      {overlap:.4f}")
+print(f"\nShared Keywords ({len(shared)}): {', '.join(sorted(shared))}")
+print(f"Keyword Overlap (Jaccard):      {overlap:.4f}")
 
 # ── 5. Named Entity Comparison (spaCy) ───────────────────────────
 nlp = spacy.load("en_core_web_sm")
@@ -61,9 +61,9 @@ entities1 = {(ent.text, ent.label_) for ent in doc1.ents}
 entities2 = {(ent.text, ent.label_) for ent in doc2.ents}
 shared_ents = entities1 & entities2
 
-print(f"\n🏷️  Entities in Transcript 1: {entities1 or 'none found'}")
-print(f"🏷️  Entities in Transcript 2: {entities2 or 'none found'}")
-print(f"✅  Shared Entities:           {shared_ents or 'none'}")
+print(f"\n Entities in Transcript 1: {entities1 or 'none found'}")
+print(f" Entities in Transcript 2: {entities2 or 'none found'}")
+print(f" Shared Entities:           {shared_ents or 'none'}")
 
 # ── 6. Summary ───────────────────────────────────────────────────
 print("\n" + "=" * 60)
