@@ -1,0 +1,14 @@
+{
+  "cancelIntent": "Caller wanted to cancel their membership with Town Square.",
+  "cancelReasons": [
+    "Not seeing progress or desired results.",
+    "Considering switching to Ollioli for better customer outreach."
+  ],
+  "saveAttempt": "Yes",
+  "saveOutcome": "Successful",
+  "customerSentiment": "Positive",
+  "urgency": "Moderate",
+  "refundRequested": "Yes",
+  "followUpRequired": "No",
+  "abstractSummary": "The customer initially wanted to cancel their service with Town Square to switch to a competitor but was convinced to stay after discussing the implications of restarting SEO efforts. They were advised on getting a refund from the competitor and agreed to enhance their current service with Town Square. They plan to expand services in Glenrock and continue benefiting from the existing setup, which has started showing positive results."
+}

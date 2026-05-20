@@ -41,7 +41,12 @@ try:
     )
 
     transcript_extraction = response.output_parsed
-    print(json.dumps(transcript_extraction.dict(), indent=2))
+
+    output_path = os.path.join(script_dir, "transcript1_output.json")
+    with open(output_path, "w", encoding="utf-8") as f:
+        json.dump(transcript_extraction.dict(), f, indent=2)
+
+    print(f"Report saved to {output_path}")
 
 except Exception as e:
     print(f"An error occurred: {e}")
