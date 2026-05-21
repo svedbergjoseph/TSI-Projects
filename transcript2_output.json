@@ -1,16 +1,16 @@
 {
-  "cancelIntent": "Gabriella intends to cancel the service due to dissatisfaction with the website development and unmet expectations.",
+  "cancelIntent": "Gabriella expressed the intention to cancel the service due to dissatisfaction with the website design and the handling of the situation.",
   "cancelReasons": [
-    "Website not delivered as per expectations",
-    "Delayed timeline for website delivery",
-    "Dissatisfaction with customer service response",
-    "Ads not being utilized as planned"
+    "Dissatisfaction with website design",
+    "Delay in delivery of website",
+    "Website did not meet expectations",
+    "Partner's decision"
   ],
-  "saveAttempt": "Sean offered expedited work on the website and proposed direct collaboration with a top representative to resolve issues quickly.",
-  "saveOutcome": "Gabriella insisted on cancellation, as the decision was already made after internal discussions.",
-  "customerSentiment": "Frustrated and disappointed",
-  "urgency": "Medium",
-  "refundRequested": "Yes",
-  "followUpRequired": "Yes, Gabriella needs to follow up on the resolution of the refund request.",
-  "abstractSummary": "Gabriella, from Angie Clean, called to cancel the website and ads service due to dissatisfaction with the delivered website not meeting her branding expectations and delayed timelines. Despite Sean's offer to expedite redesigns and collaborate closely, Gabriella's team had already decided to cancel and request a refund, citing they were not benefiting from the services as expected. Sean agreed to close the account and promised to inquire about the possibility of a refund, though he could not guarantee it."
+  "saveAttempt": "Sean attempted to retain the client by suggesting expedited redesign with top reps and reassuring quicker turnaround.",
+  "saveOutcome": "Gabriella confirmed the decision to cancel despite the attempts to save the account.",
+  "customerSentiment": "Frustrated and disappointed with the service experience.",
+  "urgency": "High urgency due to lost time and lack of progress.",
+  "refundRequested": "Yes, Gabriella requested a refund.",
+  "followUpRequired": "Yes, Gabriella will need to follow up regarding the refund.\"",
+  "abstractSummary": "Gabriella from Angie Clean contacted Sean regarding issues with their new website. Dissatisfied with the design and delays, she decided to cancel services and requested a refund. Sean attempted to resolve the issue by suggesting expedited redesign, but Gabriella confirmed the decision to cancel, emphasizing the importance of a refund."
 }

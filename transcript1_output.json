@@ -1,14 +1,14 @@
 {
   "cancelIntent": "Cancel membership with Town Square.",
   "cancelReasons": [
-    "Not seeing expected progress or results.",
-    "Switching over to another provider, Ollioli, to improve client reach."
+    "Not seeing the expected results",
+    "Switching to another company (Ollioli)"
   ],
-  "saveAttempt": "Addressed concerns with detailed explanations about SEO impacts.",
-  "saveOutcome": "Customer decided to stay with Town Square and upgrade service package.",
-  "customerSentiment": "Satisfied and reassured after conversation.",
-  "urgency": "Low urgency for cancellation but high for deciding service continuity.",
-  "refundRequested": "Yes, refund from Ollioli was requested.",
-  "followUpRequired": "Yes, further action to extend SEO services.",
-  "abstractSummary": "Customer intended to cancel service with Town Square to switch to Ollioli, seeking better results. After discussing potential setbacks of changing providers and considering additional service options, the customer decided to remain with Town Square and enhance their current package."
+  "saveAttempt": "Provide detailed options and benefits of staying with Town Square, including SEO continuity and additional services.",
+  "saveOutcome": "Customer decided to stay with Town Square and consider enhancing services with Town Square.",
+  "customerSentiment": "Initially dissatisfied due to lack of results, but became satisfied with the advice and support provided by Jeff.",
+  "urgency": "Moderate",
+  "refundRequested": "Yes",
+  "followUpRequired": "Yes",
+  "abstractSummary": "The customer, Dan Williams, intended to cancel his membership with Town Square due to unsatisfactory progress and consider switching to a competitor, Ollioli. After a detailed conversation with Jeff, providing potential consequences of switching and additional options with Town Square, Dan decided to stay and enhance his services. He also requested a refund from Ollioli, which Jeff assured him was possible since services had not yet been initiated by them."
 }
