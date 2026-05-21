@@ -188,7 +188,7 @@ def load_event_data():
                 f"[{event_name}] Total S3 size "
                 f"{total_bytes / 1024 ** 3:.2f} GB "
                 f"exceeds the "
-                f"{MAX_S3_BYTES_PER_EVENT / 1024 ** 3:.0f} GB limit."
+                f"{MAX_S3_BYTES_PER_EVENT / 1024 ** 3:.0f} GB memory limit."
             )
 
         print(f"\n  Reading {len(keys)} file(s) into memory ...")
