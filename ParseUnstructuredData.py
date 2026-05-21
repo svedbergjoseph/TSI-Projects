@@ -21,7 +21,7 @@ class TranscriptExtraction(BaseModel):
     abstractSummary: str
 try:
     script_dir = os.path.dirname(os.path.abspath(__file__))
-    file_path = os.path.join(script_dir, "transcript1.txt")
+    file_path = os.path.join(script_dir, "transcript2.txt")
 
     with open (file_path, "r", encoding = "utf-8") as file:
         transcript_text = file.read()
@@ -42,7 +42,7 @@ try:
 
     transcript_extraction = response.output_parsed
 
-    output_path = os.path.join(script_dir, "transcript1_output.json")
+    output_path = os.path.join(script_dir, "transcript2_output.json")
     with open(output_path, "w", encoding="utf-8") as f:
         json.dump(transcript_extraction.dict(), f, indent=2)
 
