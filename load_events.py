@@ -11,6 +11,8 @@ Behavior:
 
 Usage:
     python -3.14 load_events.py
+    or
+    py -3.14 load_events.py
 """
 
 from dotenv import load_dotenv
